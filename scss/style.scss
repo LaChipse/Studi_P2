@@ -1,0 +1,137 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@font-face {
+    font-family: KoHo;
+    src: url("../fonts/KoHo/KoHo-Regular.ttf");
+}
+
+$interact-color: #ed4937;
+$second-color: #dbdbdb;
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 95%;
+    width: 95%;
+}
+
+.row {
+    height: 100%;
+    margin: auto;
+}
+
+.col-6 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.playerL {
+    background-color: #dbdbdb;
+}
+
+.setPlayer,
+.global-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setPlayer {
+    margin: 13%;
+    flex-direction: column;
+}
+
+.global {
+    text-align: center;
+}
+
+.global-number {
+    color: $interact-color;
+    font-size: 6rem;
+    height: 6rem;
+    justify-content: center;
+}
+
+#global-h2p2 {
+    color: $second-color;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "KoHo";
+}
+
+.round {
+    width: 150px;
+    height: 100px;
+    background-color: $interact-color;
+    padding: 10px;
+    text-align: center;
+}
+
+.round-number {
+    color: #dbdbdb;
+    font-size: 2rem;
+}
+
+.interfaceGame {
+    height: 95%;
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.colInterfaceGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+
+.newGame {
+    display: flex;
+}
+
+.colInterfaceGame p {
+    font-size: 26px;
+    color: #6E6E6E;
+}
+
+.fa-plus,
+.fa-repeat,
+.fa-download {
+    border: 2px solid $interact-color;
+    color: $interact-color;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    align-items: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.fa-plus:hover,
+.fa-repeat:hover,
+.fa-download:hover {
+    cursor: pointer;
+}
+
+.dice {
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px $second-color;
+}

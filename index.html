@@ -7,12 +7,61 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/12ab544d55.js" crossorigin="anonymous"></script>
-    <title>SPA</title>
+    <title>ROLL DICE</title>
 </head>
 
-<body class="container">
+<body>
+    <main>
+        <div class="row">
+            <div class="col-6 playerL">
+                <div class="setPlayer">
+                    <div class="global">
+                        <h2 id="global-h2p1">PLAYER 1</h2>
+                        <div id="globalNumb1" class="global-number">0</div>
+                    </div>
+                    <div class="round">
+                        <p class="mb-2">CURRENT</p>
+                        <div id="roundNumb2" class="round-number">0</div>
+                    </div>
+                </div>
 
 
+            </div>
+            <div class="col-6 playerR">
+                <div class="setPlayer">
+                    <div class="global">
+                        <h2 id="global-h2p2">PLAYER 2</h2>
+                        <div id="globalNumb2" class="global-number">0</div>
+                    </div>
+                    <div class="round">
+                        <p class="mb-2">CURRENT</p>
+                        <div id="roundNumb2" class="round-number">0</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row interfaceGame">
+            <div class="col-12 colInterfaceGame">
+                <div class="newGame">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <p>NEW GAME</p>
+                </div>
+                <div class="dice">
+                </div>
+                <div>
+                    <div style="display: flex;">
+                        <i class="fa fa-repeat" aria-hidden="true"></i>
+                        <p>ROLL DICE</p>
+                    </div>
+                    <div style="display: flex;">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <p>HOLD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="js/script.js"></script>
 </body>
 
