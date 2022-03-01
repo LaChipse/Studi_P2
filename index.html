@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/12ab544d55.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <title>ROLL DICE</title>
 </head>
 
@@ -17,11 +19,15 @@
                 <div class="setPlayer">
                     <div class="global">
                         <h2 id="global-h2p1">PLAYER 1</h2>
-                        <div id="globalNumb1" class="global-number">0</div>
+                        <div id="globalNumb1" class="global-number">
+                            <p id="valueGlobal1">0</p>
+                        </div>
                     </div>
-                    <div class="round">
-                        <p class="mb-2">CURRENT</p>
-                        <div id="roundNumb2" class="round-number">0</div>
+                    <div id="squareRoundOne" class="round">
+                        <p class="mb-2" style="font-weight: 700">CURRENT</p>
+                        <div id="roundNumb1" class="round-number">
+                            <p id="valueRound1">0</p>
+                        </div>
                     </div>
                 </div>
 
@@ -31,11 +37,15 @@
                 <div class="setPlayer">
                     <div class="global">
                         <h2 id="global-h2p2">PLAYER 2</h2>
-                        <div id="globalNumb2" class="global-number">0</div>
+                        <div id="globalNumb2" class="global-number">
+                            <p id="valueGlobal2">0</p>
+                        </div>
                     </div>
-                    <div class="round">
-                        <p class="mb-2">CURRENT</p>
-                        <div id="roundNumb2" class="round-number">0</div>
+                    <div id="squareRoundTwo" class="round">
+                        <p class="mb-2" style="font-weight: 700">CURRENT</p>
+                        <div id="roundNumb2" class="round-number">
+                            <p id="valueRound2">0</p>
+                        </div>
                     </div>
                 </div>
 
@@ -44,18 +54,18 @@
         <div class="row interfaceGame">
             <div class="col-12 colInterfaceGame">
                 <div class="newGame">
-                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <i id="newGame" class="fa fa-plus" aria-hidden="true"></i>
                     <p>NEW GAME</p>
                 </div>
-                <div class="dice">
+                <div id="dice">
                 </div>
-                <div>
+                <div id="blockSaveValue">
                     <div style="display: flex;">
-                        <i class="fa fa-repeat" aria-hidden="true"></i>
+                        <i id="roll_dice" class="fa fa-repeat" aria-hidden="true"></i>
                         <p>ROLL DICE</p>
                     </div>
                     <div style="display: flex;">
-                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <i id="holdValue" class="fa fa-download" aria-hidden="true"></i>
                         <p>HOLD</p>
                     </div>
                 </div>

@@ -31,7 +31,7 @@ main {
 }
 
 .playerL {
-    background-color: #dbdbdb;
+    background-color: $second-color;
 }
 
 .setPlayer,
@@ -57,10 +57,6 @@ main {
     justify-content: center;
 }
 
-#global-h2p2 {
-    color: $second-color;
-}
-
 h2 {
     font-size: 3rem;
     font-family: "KoHo";
@@ -75,7 +71,7 @@ h2 {
 }
 
 .round-number {
-    color: #dbdbdb;
+    color: $second-color;
     font-size: 2rem;
 }
 
@@ -102,7 +98,7 @@ h2 {
 }
 
 .colInterfaceGame p {
-    font-size: 26px;
+    font-size: 1.5rem;
     color: #6E6E6E;
 }
 
@@ -129,9 +125,35 @@ h2 {
     cursor: pointer;
 }
 
-.dice {
+#dice {
     height: 150px;
     width: 150px;
-    background-color: white;
+    background-image: url("../images/face1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0px 0px 20px 0px $second-color;
+}
+
+@media screen and (max-width: 1079px) {
+    .colInterfaceGame p {
+        font-size: 1rem;
+    }
+    .global-number {
+        font-size: 4rem;
+        height: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .global {
+        margin-top: 75px;
+    }
+    .newGame {
+        margin-top: 25px;
+    }
+    #blockSaveValue {
+        position: relative;
+        bottom: 100px;
+        margin-bottom: 50px;
+    }
 }
