@@ -1,4 +1,4 @@
-# Application de jeux de dé à deux joueurs
+# Application de jeux de dé pour deux joueurs
 
 Le jeu comprend 2 joueurs sur un seul et même écran.
 Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL).
@@ -12,5 +12,5 @@ tour de l’autre joueur.
 - Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour.
 Le premier joueur qui atteint les 100 points sur global gagne le jeu
 
-[GitHub Pages](https://github.com/LaChipse/Studi_P2.git/)
-[Site Page](https://lachipse.github.io/Studi_P2/)
+[GitHub Pages](https://github.com/LaChipse/Studi_P2)
+[Site page](https://lachipse.github.io/Studi_P2/)
