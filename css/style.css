@@ -11151,19 +11151,18 @@ main {
 }
 
 .setPlayer,
-.global-number {
+.global-number,
+.global,
+.newGame {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 .setPlayer {
   margin: 13%;
   flex-direction: column;
-}
-
-.global {
-  text-align: center;
 }
 
 .global-number {
@@ -11207,10 +11206,6 @@ h2, .h2 {
   justify-content: space-between;
   align-items: center;
   padding: 3%;
-}
-
-.newGame {
-  display: flex;
 }
 
 .colInterfaceGame p {
